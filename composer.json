@@ -1,0 +1,42 @@
+{
+    "name": "rssr/aura-feeds-bundle",
+    "description": "Integration of Rssr.Feeds with Aura.di",
+    "type": "library",
+    "require": {
+        "rssr/feeds": "~0.5",
+        "aura/di": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "~0.9"
+    },
+    "authors": [
+        {
+            "name": "Matthew Wells",
+            "email": "mattwellss@github.com"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rssr\\Aura_Feeds_Bundle\\_Config\\": "config/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rssr/Rssr.Feeds"
+        }
+    ],
+    "extra": {
+        "aura": {
+            "type": "library",
+            "config": {
+                "common": "Rssr\\Aura_Feeds_Bundle\\_Config\\Common"
+            }
+        },
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}
