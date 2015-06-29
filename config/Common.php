@@ -1,10 +1,10 @@
 <?php
-namespace Rssr\Aura_Feeds_Bundle\_Config;
+namespace Rssr\Aura_Feeds_Bundle\Config;
 
 use Aura\Di\Container;
-use Aura\Di\Config;
+use Aura\Di\ContainerConfig;
 
-class Common extends Config
+class Common extends ContainerConfig
 {
     public function define(Container $di)
     {

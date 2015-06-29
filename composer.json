@@ -21,7 +21,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Rssr\\Aura_Feeds_Bundle\\_Config\\": "config/"
+            "Rssr\\Aura_Feeds_Bundle\\Config\\": "config/"
         }
     },
     "repositories": [
@@ -34,11 +34,8 @@
         "aura": {
             "type": "library",
             "config": {
-                "common": "Rssr\\Aura_Feeds_Bundle\\_Config\\Common"
+                "common": "Rssr\\Aura_Feeds_Bundle\\Config\\Common"
             }
-        },
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
         }
     }
 }
