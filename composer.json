@@ -4,8 +4,10 @@
     "type": "library",
     "require": {
         "rssr/feeds": "~0.5",
-        "aura/di": "~2.0"
+        "aura/di": "3.*"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require-dev": {
         "phpunit/phpunit": "~4.0",
         "mockery/mockery": "~0.9"
@@ -19,7 +21,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Rssr\\Aura_Feeds_Bundle\\_Config\\": "config/"
+            "Rssr\\Aura_Feeds_Bundle\\Config\\": "config/"
         }
     },
     "repositories": [
@@ -32,11 +34,8 @@
         "aura": {
             "type": "library",
             "config": {
-                "common": "Rssr\\Aura_Feeds_Bundle\\_Config\\Common"
+                "common": "Rssr\\Aura_Feeds_Bundle\\Config\\Common"
             }
-        },
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
         }
     }
 }
