@@ -18,7 +18,6 @@ class Common extends ContainerConfig
          * @var \Rssr\Feed\Factory
          */
         $factory = $di->get('rssr/feeds:factory');
-        $factory->addHandler('Rssr\Feed\Propel');
         $factory->addHandler('Rssr\Feed\Atom');
         $factory->addHandler('Rssr\Feed\Rss');
 
